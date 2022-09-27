@@ -1,0 +1,121 @@
+p:empty {width: 80px; height: 6px;margin: 0 auto;}
+
+.verde{background: #44773A;}
+.branco{background: #ffffff;}
+
+
+#secao-um {
+    background-image: linear-gradient(rgba(0, 80, 138, 0.25) 50%, rgba(0, 80, 138, 0.25) 50%), url(../imagens/rio-de-janeiro-cristo-redentor.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+	display: flex;
+    min-height: 500px;
+}
+.section {
+	min-height:500px; 
+	padding:30px 0px;
+}
+.mais-pesquisados-wrap {
+    display: flex;
+/*    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: stretch;
+    flex-direction: row;
+    border: none;
+    width: 70%; 
+    border-radius: 25px;*/
+}
+
+
+.mais-pesquisados-wrap a {
+    margin: 4px;
+    border-radius: 5px;
+    background-color: #dddddd;
+    color: #464646!important;
+    font-weight: 700;
+    font-size: 0.65em;
+    padding: 5px 8px;
+    cursor: pointer;
+    text-decoration: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.mais-pesquisados-wrap span {
+    color: #000000;
+    font-weight: 600;
+    font-size: 0.8em;
+    padding: 5px 10px 5px 0px;
+}
+
+.ver-mais-noticias-wrap a {
+    border-radius: 5px;
+    background-color: #dddddd;
+    color: #636363!important;
+    font-weight: 700;
+    font-size: 0.80em!important;
+    padding: 5px 12px;
+    cursor: pointer;
+    margin: 0 auto;
+    position: relative;
+    top: 15;
+}
+
+
+
+.telefones-uteis-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 35em;
+	margin: 0 auto;
+}
+
+.telefones-uteis-wrap a {
+    margin: 7px 3px;
+    border-radius: 25px;
+    background-color: #dddddd;
+    color: #363636;
+    font-weight: 700;
+    font-size: 0.9em;
+    padding: 5px 12px;
+    cursor: pointer;
+}
+
+.telefones-uteis-wrap button {
+    margin: 7px 3px;
+    border-radius: 25px;
+    background-color: #dddddd;
+    color: #363636;
+    font-weight: 700;
+    font-size: 0.9em;
+    padding: 5px 12px;
+    cursor: pointer;
+	border: none;
+}
+
+/*.programas-acoes article {
+    width: 30%;
+    margin: 5px;
+    padding: .4em;
+    background: #e2e2e2;
+}*/
+
+/* HEADER */
+.cabecalho{/*width: 100%; position: relative;*/ background: #00508a; color:#fff;}
+.cabecalho h1{margin-top:15px; font-size:1.5em;}
+.cabecalho span{font-weight: 300; font-size:.8em; text-align: center;}
+.logo-branco{width:400px; height: 150px; background: url('../imagens/logo-governo-w.png') no-repeat center center;
+  background-size:70%;}
+.logo-branco-secretarias{width:150px; height: 75px; background: url('../imagens/logo-governo-w.png') no-repeat right center;
+  background-size:100%;}
+  
+/*.container#cabecalho{display: flex; justify-content: space-around; flex-direction: row; align-items: center;}
+*/
+.section-container#navega{display: flex; justify-content: space-around; flex-direction: column; align-items: center; padding:0px;}
+.section-container#telefones-uteis{text-align: center;}
+.homemenu{/*display: flex; justify-content: center; height: 120px; align-content: center; align-items: center; margin-bottom: 7px;*/ display:none; padding: 15px; width:100%;}
+/*.homemenu-interna{display: flex; justify-content: center; height: 120px; align-content: center;
+    align-items: center; margin-bottom: 7px; background-color: #f3f3f3}
+*/

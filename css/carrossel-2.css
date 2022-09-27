@@ -1,0 +1,180 @@
+.swiper-container.s4 {
+    width: 100%;
+    height: 250px;
+}
+
+.swiper-container {
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    list-style: none;
+    padding: 0;
+    z-index: 1;
+}
+
+.swiper-wrapper {
+    position: relative;
+    width: 100%;
+    height: 82%;
+    z-index: 1;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-transition-property: -webkit-transform;
+    transition-property: -webkit-transform;
+    -o-transition-property: transform;
+    transition-property: transform;
+    transition-property: transform,-webkit-transform;
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box;
+}
+
+.swiper-container {
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    list-style: none;
+    padding: 0;
+    z-index: 1;
+}
+
+.swiper-slide.s4Servicos {
+    background: rgb(238, 238, 238);
+}
+
+
+.s4 .swiper-wrapper {
+    height: auto;/* 100%; */
+}
+
+
+.swiper-slide {
+    -webkit-flex-shrink: 0;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    -webkit-transition-property: -webkit-transform;
+    transition-property: -webkit-transform;
+    -o-transition-property: transform;
+    transition-property: transform;
+    transition-property: transform,-webkit-transform;
+}
+
+
+
+.swiper-slide img {
+    width: 100%;
+    position: absolute;
+    object-fit: cover;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -45%);
+    min-height: 100%;
+}
+
+
+.s4Servicos .servicos-desc img {
+    /* width: 100%;
+    height: 100%; */
+    background-size: cover;
+    /* position: unset; */
+    object-fit: unset;
+    top: 0;
+    left: 0;
+    transform: none;
+    min-height: 100%;
+}
+
+/* .s4Servicos .servicos-desc p {
+    font-weight: 600;
+    color: #44773a;
+    bottom: 0;
+    position: absolute;
+    width: 100%;
+} */
+
+.swiper-button-next.s4, .swiper-button-prev.s4 {
+    position: relative;
+    /*position: absolute;
+     top: 51%; */
+    width: 27px;
+    height: 44px;
+    margin-top: 0;
+    z-index: 10;
+    cursor: pointer;
+    background-size: 27px 44px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.swiper-container .swiper-notification {
+    position: absolute;
+    left: 0;
+    top: 0;
+    pointer-events: none;
+    opacity: 0;
+    z-index: -1000;
+}
+
+
+/* .swiper-button-prev.s4 {
+    background: url(../imagens/left-arrow.png) no-repeat center center;
+    background-size: 30px;
+    left: 11%;
+    right: auto;
+    top: 85px;
+} */
+
+
+.swiper-button-prev.s4 {
+    background: url(../imagens/left-arrow.png) no-repeat center center;
+    background-size: 30px;
+    left: 0;
+    bottom: 25px;
+}
+
+/*.swiper-button-prev.s4, .swiper-container-rtl.s4 .swiper-button-next.s4 {
+    background: url(../imagens/left-arrow.png) no-repeat center center;
+    background-size: 30px;
+    left: 260px;
+    right: auto;
+}
+
+ .swiper-button-prev, .swiper-container-rtl .swiper-button-next {
+    background-image: url(data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2027%2044'%3E%3Cpath%20d%3D'M0%2C22L22%2C0l2.1%2C2.1L4.2%2C22l19.9%2C19.9L22%2C44L0%2C22L0%2C22L0%2C22z'%20fill%3D'%23007aff'%2F%3E%3C%2Fsvg%3E);
+    left: 10px;
+    right: auto;
+} */
+
+
+/* .swiper-button-next.s4 {
+    background: url(../imagens/right-arrow.png) no-repeat center center;
+    background-size: 30px;
+    left: auto;
+    top: -110px;
+    right: -86%;
+} */
+
+.swiper-button-next.s4 {
+    background: url(../imagens/right-arrow.png) no-repeat center center;
+    background-size: 30px;
+    right: 0;
+    bottom: 25px;
+}
+
+
+/* .swiper-button-next.s4, .swiper-container-rtl.s4 .swiper-button-prev.s4 {
+    background: url(../imagens/right-arrow.png) no-repeat center center;
+    background-size: 30px;
+    right: 260px;
+    left: auto;
+}
+
+   .swiper-button-next, .swiper-container-rtl .swiper-button-prev {
+    background-image: url(data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2027%2044'%3E%3Cpath%20d%3D'M27%2C22L27%2C22L5%2C44l-2.1-2.1L22.8%2C22L2.9%2C2.1L5%2C0L27%2C22L27%2C22z'%20fill%3D'%23007aff'%2F%3E%3C%2Fsvg%3E);
+    right: 10px;
+    left: auto;
+} */

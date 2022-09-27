@@ -1,0 +1,948 @@
+<html lang="pt-br">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="Content-Language" content="pt-br; charset=utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+
+		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+		<!--<script src="js/modernizr.custom.js"></script> arquivo javascript modal telefones úteis -->
+
+
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+		<link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="./css/style.css">
+		<link rel="stylesheet" href="./css/slider1.css">
+		<link rel="stylesheet" href="./css/slider2.css">
+		<link rel="stylesheet" href="./css/swiper.css">
+		<link rel="stylesheet" href="./css/carrossel-2.css">
+		<link rel="stylesheet" href="./css/tooltip.css">
+		<link rel="stylesheet" href="./css/menu-mobile.css">
+		<link rel="stylesheet" href="./css/acessibilidade-dropdown.css">
+		<link rel="stylesheet" href="./css/cabecalho.css">
+		<link rel="stylesheet" href="./css/section-search.css">
+		<link rel="stylesheet" href="./css/modal-component.css" />
+		<link rel="stylesheet" href="./css/transparencia.css" />
+		<link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+		<link rel="stylesheet" href="./css/flip-card-servicos.css">
+		<link rel="stylesheet" href="./css/der.css">
+
+		<style>
+
+			/******* cabecalho.css ************/
+
+			.logo-funarj {
+				width: 99px;
+				height: 70px;
+				margin-right: 50px;
+			}
+
+			.logo-branco {
+				width: 225px;
+				height: 66px;
+			}
+
+			.menu-overlay {
+				top: 85px;
+			}
+
+			.menu-overlay-content {
+				margin: 30px 0px;
+			}
+
+			div#close {
+				margin: -27px 60px 0 -1px;
+			}
+
+			.menu-column {
+				margin-bottom: 0px;
+			}
+
+			/******* slider1.css ************/
+
+			/* .slide-wrap {
+				margin: 20px auto;
+				width: 76%;}*/
+			.slide1-layout {
+				height: 500px;
+			} 
+
+			.titulo {
+				min-height: 115px;
+				bottom: 50px;
+			}
+
+			.titulo h1 {
+				font-size: 1em;
+			}
+
+			.slide1 .dots {
+				bottom: 18px;
+			}
+
+			/******* funarj.css ************/
+
+			.noticia-3col h1 {
+				font-size: 1rem;
+			}
+
+			.noticia-3col p {
+				font-size: .8rem;
+			}
+
+			.telefones-uteis-wrap button {
+				font-size: .9em;
+				padding: 15px 30px;
+				border-radius: 6px;
+				height: unset; 
+				width: unset;
+			}
+				
+			/******* style.css ************/
+
+			.lista-noticias {
+				margin-top: 40px;
+			}
+
+			.lista-videos {
+				margin: 30px auto 50px;
+			}
+
+			.articles-noticias {
+				justify-content: space-between;
+				margin-top: 0px;
+			}
+
+			.programas-acoes article {
+				width: 27%;
+				margin: 20px;
+				padding: .3em;
+			}
+
+			.footer {
+				padding: 0;
+				box-shadow: 0px 3px 20px 0px rgb(235 235 235 / 75%);
+				-webkit-box-shadow: 0px 3px 20px 0px rgb(235 235 235 / 75%);
+				-moz-box-shadow: 0px 3px 20px 0px rgba(235,235,235,0.75);
+			}
+
+			.logo-branco-rodape {
+				width: 212px;
+				height: 50px;
+				background: url(./imagens/Logo_Gov-RJ_Horizontal_slogan.png) no-repeat center center;
+				background-size: cover;
+			}
+
+			section.banner {
+				margin-bottom: 50px;
+			}
+
+			/******* carrossel-2.css ************/
+
+			.swiper-slide.s4Servicos {
+				min-height: 165px;
+			}
+
+			.swiper-button-prev.s4 {
+				bottom: 0px;
+			}
+
+			.swiper-button-next.s4 {
+				bottom: 0px;
+			}
+
+			.s4Servicos .servicos-desc {
+				font-size: .9em;
+			}
+
+			.servicos-desc {
+				padding: 30px 70px;
+			}
+
+		</style>
+
+	</head>
+
+	<body>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+
+		<script>
+			AOS.init();
+		</script>
+
+		<div class="container"><!-- CONTAINER PARA TODA A PÁGINA -->
+
+				<script>
+					/* When the user clicks on the button, 
+					toggle between hiding and showing the dropdown content */
+					function myFunction() {
+						document.getElementById("acessibilidade-myDropdown").classList.toggle("acessibilidade-show");
+					}
+
+					// Close the dropdown if the user clicks outside of it
+					window.onclick = function (event) {
+						if (!event.target.matches('.acessibilidade-dropbtn')) {
+							var dropdowns = document.getElementsByClassName("acessibilidade-dropdown-content");
+							var i;
+							for (i = 0; i < dropdowns.length; i++) {
+								var openDropdown = dropdowns[i];
+								if (openDropdown.classList.contains('acessibilidade-show')) {
+									openDropdown.classList.remove('acessibilidade-show');
+								}
+							}
+						}
+					}
+
+					function openNav() { document.getElementById("myNav").style.display = "block"; }
+					function closeNav() { document.getElementById("myNav").style.display = "none"; }
+
+				</script>
+
+
+			<!-- ######### FIM MENU SUPERIOR ################## -->
+
+
+
+			<!-- ################################################# -->
+			<!-- ######### CABEÇALHO AZUL  ################## -->
+			<!-- ################################################# -->
+
+				<header class="cabecalho"><!-- ### HEADER ### -->
+					<div class="section-container" id="cabecalho">
+					
+						<div id="hambtn" class="menu-mob"><a onclick="openNav()">&#9776;</a></div>
+						
+
+						<div class="logoproderj-redes-wrap" >
+						
+							<a href="#"><div class="logo-site"></div></a>
+							<a href="http://www.rj.gov.br"><div class="logo-governo"></div></a>
+
+							<div class="redes-webmail-wrap">
+								<div class="social-midia-sup social-midia-proderj">
+									<ul style="display: flex;">
+										<li><a class="icons midias-proderj facebook" href="https://www.facebook.com/" target="_blank">Facebook</a></li>
+										<li><a class="icons midias-proderj twitter" href="https://www.youtube.com/" target="_blank">Twitter</a></li> 
+										<li><a class="icons midias-proderj instagram" href="https://www.instagram.com/" target="_blank">Instagram</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div><!-- /cabecalho-->
+				</header>
+				
+			<!--  ############## FIM CABEÇALHO AZUL ############  -->
+
+
+			<!-- ################################################# -->
+			<!-- ######### MENU CINZA  ################## -->
+			<!-- ################################################# -->  
+
+
+			<section id="menu">
+				<div id="myNav" class="menu-overlay">
+
+
+					<div class="menu-overlay-container section-container">
+						<div class="menu-overlay-content">
+
+							<div class="menu-row">
+								<div id="close">
+									<a href="javascript:void(0)" class="closebtn menu-mob-close" onClick="closeNav()">&times;</a>
+								</div>
+
+								<div class="itens-menu-wrap">
+									<div class="menu-column" id="o-detro">
+										<h4>FOTEBOL</h4>
+										<ul>
+											<li><a href="#">Tudo sobre Fotebol</a></li>
+											<li><a href="#">As Equipes</a></li>
+											<li><a href="#">As Divisões</a></li>
+											<li><a href="#">Seleção Brasileira</a></li>
+										</ul>
+									</div>
+
+									<div class="menu-column" id="operacional">
+										<h4>Tudo pelo Mundo</h4>
+										<ul>
+											<li><a href="#">MMA</a></li>
+											<li><a href="#">Basquete</a></li>
+											<li><a href="#">Volei</a></li>
+											<li><a href="#">Olimpiadas</a></li>
+											<li><a href="#">Campeonatos</a></li>
+											<li><a href="#">Eventos</a></li>
+											<li><a href="#">Copa Do Mundo</a></li>
+										</ul>
+									</div>
+
+									<div class="menu-column" id="licitacoes">
+										<h4>Esports</h4>
+										<ul>
+											<li><a href="#">CBLOL</a></li>
+											<li><a href="#">CBLOL-ACADEMY</a></li>
+											<li><a href="#">Mundial de LOL</a></li>
+											<li><a href="#">CSGO</a></li>
+										</ul>
+									</div>	
+									
+									<div class="menu-column" id="legislacoes">
+										<h4>Você Sabia</h4>
+											<ul>
+												<li><a href="#">Fique em Forma sem sair de casa</a></li>
+												<li><a href="#">Faça você mesmo</a></li>
+												<li><a href="#">Tá Esperando oque?</a></li>
+											</ul>
+									</div>
+							
+								</div><!-- /itens-menu-wrap -->
+							</div><!-- /menu-row -->
+						</div><!-- /menu-overlay-content -->
+					</div><!-- menu-overlay-container -->
+
+					<script>
+						function openNav() {
+						document.getElementById("myNav").style.display = "block";
+						}
+
+						function closeNav() {
+						document.getElementById("myNav").style.display = "none";
+						}
+					</script>
+
+				</div>
+			</section><!-- #MENU -->
+
+			<!-- ############### / FIM MENU CINZA ############# -->
+
+			<!-- ######### SEÇÃO SLIDE  ################## -->
+			<!-- ################################################# -->
+
+			<section id="slide1">
+
+				<div class="slide-wrap">
+					<div class="slide1 slide1-layout">
+
+						<ul>
+							<li data-bg="">
+								<div id="noticia-1" class="texto-noticia desc-slider"></div>
+								<div class="imagem" style="background: url(./imagens/slider/gremio-sport.webp);" title="gremio-sport">
+									<a id="RepeaterDestaques_ctl00_A1" name="282" href="javascript:__doPostBack('RepeaterDestaques$ctl00$A1','')">
+									<span id="RepeaterDestaques_ctl00_lblNoticiaDestaques" class="titulo">
+										<span style="line-height: 2em;">Grêmio vai a 95% de chance de acesso na Série B</span>
+										<h1>e Vasco vê números de rivais diretos caírem</h1>
+									</span>
+									</a>
+								</div>
+							</li>
+
+							<li data-bg="">
+								<div id="noticia-2" class="texto-noticia desc-slider"></div>
+								<div class="imagem" style="background:url(./imagens/slider/diego2.webp);" title="diego2">
+									<a id="RepeaterDestaques_ctl01_A1" name="283" href="javascript:__doPostBack('RepeaterDestaques$ctl01$A1','')">
+									<span id="RepeaterDestaques_ctl01_lblNoticiaDestaques" class="titulo">
+										<span style="line-height: 2em;">Diego Souza revela atuar com hérnia inguinal no Grêmio</span>
+										<h1>E diz que passará por cirurgia no fim do ano</h1>
+									</span>
+									</a>
+								</div>	      
+							</li>
+						</ul>
+
+						<div class="arrow" style="opacity: 0;">
+							<a class="arrow-left"></a>
+							<a class="arrow-right"></a>
+						</div>
+						<ol class="dots">
+							<li class=""></li><li class=""></li><li class=""></li><li class=""></li>
+						</ol>
+					
+					</div>
+				</div><!-- /slide-wrap -->
+
+			</section><!-- #SLIDE1 -->
+			<!-- ######### FIM SEÇÃO SLIDE  ################## -->
+
+
+			<!-- ################################################# -->
+			<!-- ######### SEÇÃO NOTÍCIAS 3 COLUNAS  ################## -->
+			<!-- ################################################# -->
+
+			<section id="noticias-3-colunas">
+
+				<div class="noticia-3col-wrap">
+					
+					<div class="noticia-3col aos-init aos-animate" data-aos="fade-right" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+						<div class="noticia-3col-imagem-wrap">
+							<a id="A1" href="#" name="" alt="">
+								<img src="./imagens/noticias/faker-t1-worlds-2022-michal-konkol.webp" alt="" title="faker-t1-worlds-2022-michal-konkol">		
+							</a>
+						</div>
+						<!-- <h4>Crimes contra a vida</h4> -->
+						<a id="A3" href="#" name="">
+							<h1>
+								<span id="RptOutrasNoticias_ctl00_Label1" class="title">Worlds 2022: Faker deve chegar a 100 jogos disputados; veja lista</span>
+							</h1>
+						</a>
+						<p><span style="font-family: verdana, geneva, sans-serif;">
+							Sang-hyeok "Faker", tricampeão mundial de League of Legends, está prestes a atingir a marca de 100 partidas disputadas no Worlds 2022. O sul-coreano encabeça uma lista com mais outros nove
+							<a id="A3" href="#" name=""> […]</a></span></p>
+					</div>
+				
+					<div class="noticia-3col aos-init aos-animate" data-aos="zoom-in" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+						<div class="noticia-3col-imagem-wrap">
+							<a id="A1" href="#" name="" alt="">
+								<img src="./imagens/noticias/iem-rio-major-2022-cs-go.webp" alt="" title="iem-rio-major-2022-cs-go">		
+							</a>
+						</div>
+						<!-- <h4>Estudos</h4> -->
+						<a id="A3" href="#" name="">
+							<h1>
+								<span id="RptOutrasNoticias_ctl01_Label1" class="title">IEM Major Rio 2022 anuncia aumento na premiação total</span>
+							</h1>
+						</a>
+						<p><span style="font-family: verdana, geneva, sans-serif;">
+							O IEM Major Rio 2022 recebeu um aumento em sua premiação total. O mundial de CS:GO, que inicialmente distribuiria US$ 1 milhão (R$ 5,41 milhões), agora terá prize pool de US$ 1,25 milhão (R$ 6,77 milhões). 
+							<a id="A3" href="#" name=""> […]</a></span></p>
+					</div>
+						
+					<div class="noticia-3col aos-init aos-animate" data-aos="fade-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+						<div class="noticia-3col-imagem-wrap">
+							<a id="A1" href="#" name="" alt="">
+								<img src="./imagens/noticias/fifa-23-global-series.webp" alt="" title="Divulgação">		
+							</a>
+						</div>
+						<!-- <h4>COVID-19</h4> -->
+						<a id="A3" href="#" name="">
+							<h1>
+								<span id="RptOutrasNoticias_ctl02_Label1" class="title">FIFA 23 anuncia calendário competitivo com novo Major e torneio de clubes</span>
+							</h1>
+						</a>
+						<p><span style="font-family: verdana, geneva, sans-serif;">
+							Com o lançamento de FIFA 23 se aproximando, a EA revelou o planejamento competitivo completo de seu novo game de futebol. A principal novidade no FIFA 23 Global
+							<a id="A3" href="#" name=""> […]</a></span></p>
+					</div>
+					
+					
+				</div><!-- /noticia-3col-wrap -->
+			</section><!-- /noticias-3-colunas -->
+
+
+			<!-- ######### FIM SEÇÃO NOTÍCIAS 3 COLUNAS  ################## -->
+
+			<div class="lista-noticias-line">
+				<button class="lista-noticias">
+				<a id="A3" href="javascript:__doPostBack('A3','')">Veja a lista completa de notícias</a>
+				</button>
+			</div>
+
+			
+
+			<!-- ################################################# -->
+			<!-- ######### SEÇÃO BANNER  ################## -->
+			<!-- ################################################# -->
+
+			<section class="banner branco">
+				<div class="section-container" data-aos="flip-down" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+					<div class="articles-noticias">
+						<a href="https://coronavirus.rj.gov.br/" target="_blank">
+							<img src="./imagens/banners/banner-corona-der.jpg" alt="banner corona der" title="">
+						</a>
+					</div>
+				</div>
+			</section>
+
+
+			<!-- ######### FIM SEÇÃO BANNER  ################## -->
+
+			<hr class="gradiente">
+
+			<!-- ################################################# -->
+			<!-- ######### SEÇÃO SERVIÇOS  ################## -->
+			<!-- ################################################# -->
+
+			<section class="programas-acoes branco">
+				<div class="section-container">
+
+					<div class="titulo-secao">
+						<span>Serviços</span>
+						<p></p>
+					</div>
+
+					<div class="wrapper cards">
+
+						<div class="card-container servidorPublico">
+							<div class="card">
+								<div class="front" style="display: flex; flex-direction: column;">
+									<div class="icon-wrap">
+										<img border="0" src="./imagens/servicos/icon_detro_boleto.png" style="height: 50px;">
+									</div>
+									<h2>Boletos Online</h2>
+								</div>
+								<div class="back">
+									<div class="cardContent">
+										<a href="#"> 
+											<h3 class="cardTitle">BOLETOS ONLINE</h3>
+										</a>
+										<p>
+											Procedimentos para emissão de boletos de multas e diárias de Pátio/Reboque.
+										</p>
+										<a href="#">
+											<h5 class="cardAcesse">Acesse</h5>
+										</a>
+									</div>
+								</div>
+							</div><!-- /card -->
+						</div><!-- /card-container -->
+					
+						<div class="card-container servidorPublico">
+							<div class="card">
+								<div class="front" style="display: flex; flex-direction: column;">
+									<div class="icon-wrap">
+										<img border="0" src="./imagens/servicos/icon_detro_apreendidos.png" style="height: 50px;">
+									</div>
+									<h2>Liberação do Veículo</h2>
+								</div>
+								<div class="back">
+									<div class="cardContent">
+										<a href="#">
+											<h3 class="cardTitle">LIBERAÇÃO DO VEÍCULO</h3>
+										</a>
+										<p>
+											Procedimentos para liberação de veículos apreendidos pelo Detro.
+										</p>
+										<a href="#">
+											<h5 class="cardAcesse">Acesse</h5>
+										</a>
+									</div>
+								</div>
+							</div><!-- /card -->
+						</div><!-- /card-container -->
+
+						<div class="card-container servidorPublico">
+							<div class="card">
+								<div class="front" style="display: flex; flex-direction: column;">
+									<div class="icon-wrap">
+										<img border="0" src="./imagens/servicos/icon_detro_nada-consta_br.png" style="height: 50px;">
+									</div>
+									<h2>Nada Consta</h2>
+								</div>
+								<div class="back">
+									<div class="cardContent">
+										<a href="#">
+											<h3 class="cardTitle">NADA CONSTA</h3>
+										</a>
+										<p>
+											Clique aqui e para gerar o nada consta do DETRO do seu veículo
+										</p>
+										<a href="#">
+											<h5 class="cardAcesse">Acesse</h5>
+										</a>
+									</div>
+								</div>
+							</div><!-- /card -->
+						</div><!-- /card-container -->
+				
+						<div class="card-container servidorPublico">
+							<div class="card">
+								<div class="front" style="display: flex; flex-direction: column;">
+									<div class="icon-wrap">
+										<img border="0" src="./imagens/servicos/icon_detro_onibus.png" style="height: 50px;">
+									</div>
+									<h2>Serviços Ônibus</h2>
+								</div>
+								<div class="back">
+									<div class="cardContent">
+										<h3 class="cardTitle">SERVIÇOS ÔNIBUS</h3>
+										<ul>	
+											<li><a href="#">Acessibilidade - Aviso A5 (14,8 X 21 CM)</a></li>
+											<li><a href="#">Acessibilidade - Certificado verso A7 (7,4 X 10,5 CM)</a></li>
+											<li><a href="#">Autorização de Viagens Fretamento</a></li>
+											<li><a href="#">Boletim Operacional Mensal (BOM WEB)</a></li>
+											<li><a href="#">CAD (Cadastro de Empresas)</a></li>
+											<li><a href="#">Nova Autorização de Viagem</a></li>
+											<li><a href="#">Novo CAD (Cadastro de Empresas)</a></li>
+											<li><a href="#">Taxa de Abertrura de Processos</a></li>
+										</ul>
+									</div>
+								</div>
+							</div><!-- /card -->
+						</div><!-- /card-container -->	
+				
+						<div class="card-container servidorPublico">
+							<div class="card">
+								<div class="front" style="display: flex; flex-direction: column;">
+									<div class="icon-wrap">
+										<img border="0" src="./imagens/servicos/icon_detro_van_br.png" style="height: 50px;">
+									</div>
+									<h2>Serviços Vans</h2>
+								</div>
+								<div class="back">
+									<div class="cardContent">
+										<h3 class="cardTitle">SERVIÇOS VANS</h3>
+										<ul>	
+											<li><a href="#">Boletim Operacional Mensal (BOM STC)</a></li>
+											<li><a href="#">Impressão de Boletos</a></li>
+											<li><a href="#">Notificaçãoes</a></li>
+											<li><a href="#">Serviços para Permissionários de Vans</a></li>
+										</ul>
+									</div>
+								</div>
+							</div><!-- /card -->
+						</div><!-- /card-container -->
+
+						<div class="card-container servidorPublico">
+							<div class="card">
+								<div class="front" style="display: flex; flex-direction: column;">
+									<div class="icon-wrap">
+										<img border="0" src="./imagens/servicos/icon_detro_populacao.png" style="height: 50px;">
+									</div>
+									<h2>Serviços População</h2>
+								</div>
+								<div class="back">
+									<div class="cardContent">
+										<h3 class="cardTitle">SERVIÇOS POPULAÇÃO</h3>
+										<ul>	
+											<li><a href="#">Acompanhamento de Processos</a></li>
+											<li><a href="#">Empresas Transporte Fretamento e Turismo</a></li>
+											<li><a href="#">Gratuidades (idosos, estudantes e deficientes físicos)</a></li>
+											<li><a href="#">Leilão de Veículos</a></li>
+											<li><a href="#">Liberação de Veículos</a></li>
+											<li><a href="#">Linhas Intermunicipais</a></li>
+											<li><a href="#">Novas Tarifas</a></li>
+											<li><a href="#">Ônibus Intermunicipais</a></li>
+											<li><a href="#">Processos Expurgados</a></li>
+											<li><a href="#">Vans Intermunicipais</a></li>
+										</ul>
+									</div>
+								</div>
+							</div><!-- /card -->
+						</div><!-- /card-container -->	
+
+						<div class="card-container servidorPublico">
+							<div class="card">
+								<div class="front" style="display: flex; flex-direction: column;">
+									<div class="icon-wrap">
+										<img border="0" src="./imagens/servicos/icon_detro_link.png" style="height: 50px;">
+									</div>
+									<h2>Links Úteis</h2>
+								</div>
+								<div class="back">
+									<div class="cardContent">
+										<h3 class="cardTitle">LINKS ÚTEIS</h3>
+										<ul>	
+											<li><a href="http://www.rj.gov.br/" target="_blank">Governo do Estado do Rio de Janeiro</a></li>
+											<li><a href="http://www.rj.gov.br/secretaria/Default.aspx?sec=TRANSPORTES" target="_blank">Secrataria de Transportes</a></li>
+											<li><a href="http://www.detran.rj.gov.br/" target="_blank">DETRAN / RJ</a></li>
+											<li><a href="http://www.ioerj.com.br/" target="_blank">Imprensa Oficial</a></li>
+											<li><a href="https://www.cartaoriocard.com.br/" target="_blank">RIO CARD</a></li>
+										</ul>
+									</div>
+								</div>
+							</div><!-- /card -->
+						</div><!-- /card-container -->
+
+						<div class="card-container servidorPublico">
+							<div class="card">
+								<div class="front" style="display: flex; flex-direction: column;">
+									<div class="icon-wrap">
+										<img border="0" src="./imagens/servicos/icon_detro_leilao.png" style="height: 50px;">
+									</div>
+									<h2>Leilão</h2>
+								</div>
+								<div class="back">
+									<div class="cardContent">
+										<a href="#">
+											<h3 class="cardTitle">LEILÃO</h3>
+										</a>
+										<p>
+											Informações e datas dos nossos leilões.
+										</p>
+										<a href="#">
+											<h5 class="cardAcesse">Acesse</h5>
+										</a>
+									</div>
+								</div>
+							</div><!-- /card -->
+						</div><!-- /card-container -->
+				
+					</div><!-- /wrapper cards -->
+
+				</div>
+			</section>
+
+			<!-- ################################################# -->
+			<!-- ######### SEÇÃO LINKS ÚTEIS  ################## -->
+			<!-- ################################################# -->
+
+
+			<section id="linksUteis" style="padding: 60px 0;">
+				<div class="section-container">
+
+					<div class="titulo-secao"><span>Links Úteis</span><p></p></div>
+
+
+					<div class="swiper-container-wrap aos-init aos-animate" data-aos="fade-left" data-aos-duration="2000" style="display: flex; align-items: center;">
+
+						<div class="swiper-button-prev s4" tabindex="0" role="button" aria-label="Previous slide" aria-disabled="false"></div>
+
+						<div class="swiper-container s4 swiper-container-initialized swiper-container-horizontal">
+
+							<div class="swiper-wrapper">
+
+								<div class="swiper-slide s4Servicos">
+									<a href="http://www.der.rj.gov.br/documentos/pdf/PDTIC_DER-RJ_2021.pdf" target="_blank">
+										<div class="servicos-desc">
+											<img src="./imagens/links-uteis/card_PEDTIC_der.jpg" alt="" title="">
+										</div>
+									</a>
+								</div>
+
+								<div class="swiper-slide s4Servicos">
+									<a href="http://www.esicrj.rj.gov.br/" target="_blank">
+										<div class="servicos-desc">
+											<img src="./imagens/links-uteis/713links_eSIC.png" alt="" title="">
+										</div>
+									</a>
+								</div>
+
+								<div class="swiper-slide s4Servicos swiper-slide-prev">
+									<a href="http://www.setic.rj.gov.br/" target="_blank">
+										<div class="servicos-desc">
+											<img src="./imagens/links-uteis/633setic - 375x235px.png" alt="" title="">
+										</div>
+									</a>
+								</div>
+
+								<div class="swiper-slide s4Servicos swiper-slide-active">
+									<a href="http://www.cge.rj.gov.br/disque-rio-contra-a-corrupcao/" target="_blank">
+										<div class="servicos-desc">
+											<img src="./imagens/links-uteis/632disque_rio75x235.png" alt="" title="">
+										</div>
+									</a>
+								</div>
+
+								<div class="swiper-slide s4Servicos">
+									<a href="../PaginaDetalhe.aspx?id_pagina=9140" target="_blank">
+										<div class="servicos-desc">
+											<img src="./imagens/links-uteis/630LGPD - 1280x802px.png" alt="" title="">
+										</div>
+									</a>
+								</div>
+
+
+							</div><!-- /swiper-wrapper -->
+
+						<span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
+					
+						</div><!-- /swiper-container s4 -->
+
+						<div class="swiper-button-next s4" tabindex="0" role="button" aria-label="Next slide" aria-disabled="false"></div>
+
+					</div><!-- /swiper-container-wrap -->
+
+				</div><!-- /section-containers -->
+			</section>
+
+		</div>
+
+	    <!-- FIM DIV CONTAINER -->
+
+		<div class="md-overlay-telefones"></div><!-- the overlay element -->
+
+		<!-- arquivos javascript da modal -->
+
+			<!-- classie.js by @desandro: https://github.com/desandro/classie -->
+			<script src="./js/modal/classie.js"></script>
+			<script src="./js/modal/modalEffectsTelefones.js"></script>
+
+			<!-- for the blur effect -->
+			<!-- by @derSchepp https://github.com/Schepp/CSS-Filters-Polyfill -->
+			<script>
+				// this is important for IEs
+				var polyfilter_scriptpath = '/js/';
+			</script>
+			<script src="./js/modal/cssParser.js"></script>
+			<script src="./js/modal/css-filters-polyfill.js"></script>
+
+
+	<!-- FOOTER -->
+	<footer class="footer">
+
+			
+	
+		<div style="display: contents; width: 40%; text-align: center; padding-bottom: 20px;">
+			
+			<!--<div style="display: flex; flex-wrap: wrap; width: 60%; margin: 0 auto; justify-content: space-between; align-items: center; margin-top: 30px;">
+				<img src="./logo.png" alt="PESAGRO" height="auto" width="120px">		
+			</div>-->
+			
+			<div style="display: flex;flex-wrap: wrap;margin: 10px auto;justify-content: space-between;align-items: center;text-align: center;height: 77px;">
+		
+
+				<div style="display: flex;">
+					<img src="./imagens/Header/logo.png" alt="FUNARJ" height="auto" width="150px">
+
+					<div class="endereco">
+						<!-- <h4 style="margin-bottom: 4px; font-size: .8em;">SEDE</h4> -->
+						<span style="font-size: .95em;">R. Centro, 118<br />
+							Centro, Rio de Janeiro - RJ, 00000-000</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!-- #FOOTER -->
+
+	<script src="./js/menu-mobile.js"></script>
+
+	<script src="./js/jquery.slide1.js"></script>
+
+	<script src="./js/min/swiper.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.js"></script>
+	<script src="js/jquery.magnific-popup.min.js"></script>
+
+	<script type="text/javascript">
+		$(function () {
+			$('.slide1').slide({
+				'slideSpeed': 3000,
+				'isShowArrow': true,
+				'dotsEvent': 'mouseenter',
+				'isLoadAllImgs': true
+			});
+		});
+	</script>
+
+	<script src="./js/jquery.slide2.js"></script>
+
+	<script type="text/javascript">
+		$(function () {
+			$('.slide2').slide2({
+				'slideSpeed': 3000,
+				'isShowArrow': true,
+				'dotsEvent': 'mouseenter',
+				'isLoadAllImgs': true
+			});
+		});
+	</script>
+
+	<!-- FLIP-CARD -->
+
+	<script>
+		$('.card').click(function () {
+			$(this).toggleClass('flipped');
+		});
+	</script>
+
+	<!-- VOLTAR AO TOPO -->
+
+	<a id="back2Top" title="Voltar ao topo" href="#">&#10148;</a>
+
+
+	<!-- toggle box transparencia -->
+
+	<script type="text/javascript">
+	/*Scroll to top when arrow up clicked BEGIN*/
+	$(window).scroll(function() {
+		var height = $(window).scrollTop();
+		if (height > 100) {
+			$('#back2Top').fadeIn();
+		} else {
+			$('#back2Top').fadeOut();
+		}
+	});
+	$(document).ready(function() {
+		$("#back2Top").click(function(event) {
+			event.preventDefault();
+			$("html, body").animate({ scrollTop: 0 }, "slow");
+			return false;
+		});
+
+	});
+	/*Scroll to top when arrow up clicked END*/
+	</script>
+
+	<script>
+		$('.btn-saiba-mais').click(function (e) {
+			e.preventDefault();
+			$('.box-acesso-informacao').fadeToggle();
+			$('.box-acesso-informacao').css('display', 'flex');
+			$('.box-acesso').fadeToggle(1);
+		});
+
+		$('.close-secretario').click(function (e) {
+			e.preventDefault();
+			$('.box-acesso-informacao').fadeToggle(1);
+			$('.box-acesso').fadeToggle();
+		});
+	</script>
+
+
+	<script type="text/javascript">
+	/*Scroll to top when arrow up clicked BEGIN*/
+	$(window).scroll(function() {
+		var height = $(window).scrollTop();
+		if (height > 100) {
+			$('#voltaTopo').fadeIn();
+		} else {
+			$('#voltaTopo').fadeOut();
+		}
+	});
+	$(document).ready(function() {
+		$("#voltaTopo").click(function(event) {
+			event.preventDefault();
+			$("html, body").animate({ scrollTop: 0 }, "slow");
+			return false;
+		});
+
+	});
+	/*Scroll to top when arrow up clicked END*/
+	</script>
+
+	<script>
+
+		var swiper = new Swiper('.swiper-container.s4', {
+			slidesPerView: 3,
+			breakpoints: {
+				680: {
+					slidesPerView: 1,
+				},
+				860: {
+					slidesPerView: 2,
+				}
+			},
+			spaceBetween: 10,
+			slidesPerGroup: 1,
+			loop: false,
+			/* loopFillGroupWithBlank: true, */
+			watchOverflow: true,  /* esconde navegação quando houver poucos slides */
+			centerInsufficientSlides: true, /* centraliza slide quando forem menos do que slidesPerView */
+			pagination: {
+				el: '.swiper-pagination.s4',
+				clickable: true,
+			},
+			navigation: {
+				nextEl: '.swiper-button-next.s4',
+				prevEl: '.swiper-button-prev.s4',
+			},
+			watchOverflow: true,  /* esconde navegação quando houver poucos slides */
+		});
+	</script>
+
+	<script>
+		$('.menu-mob').click(function (e) {
+			e.preventDefault();
+			$('.dropdown-menu').fadeIn();
+		});
+
+		$('.menu-mob-close').click(function (e) {
+			e.preventDefault();
+			$('.dropdown-menu').fadeOut();
+		});
+	</script>
+
+	</body>
+
+</html>

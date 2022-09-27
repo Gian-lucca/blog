@@ -1,0 +1,72 @@
+
+.card {
+  transition: transform 2s;
+  transform-style: preserve-3d;
+  cursor: pointer;
+}
+
+.card-container {
+  margin: 20px;
+  width: 500px;
+  height: 500px;
+  perspective: 1000px;
+}
+
+.front, .back {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  backface-visibility: hidden;
+}
+
+.front {
+/*  border: 2px solid black;
+  background: url("http://placehold.it/250x250");*/
+  	margin: 12px auto;
+	width: 165px;
+	height: 165px;
+	text-align: center;
+	border-radius: 8px;
+	transition: 200ms ease-in-out;
+	box-shadow: 0 0 15px rgba(0,0,0,0.7);
+}
+
+.front h2 {
+	color: #ccc;
+	padding: 20px 10px;
+	margin-top: 50px;
+	text-align: center;
+	letter-spacing: 0.04em;
+	font-weight: 600;
+	font-size: 12px;
+	background: rgba(0,0,0,0.8);
+	box-shadow: 0 0 30px rgba(0,0,0,0.7);
+}
+
+.front:hover {
+/*  bottom: 2px;
+  left: 2px;*/
+  box-shadow: 0px 0px 20px 1px #000;
+}
+
+.back {
+/*  border: 2px solid black;
+  background: url("http://placehold.it/100x100");
+ */ transform: rotateY(180deg);
+	margin: 12px auto;
+	width: 165px;
+	height: 165px;
+	text-align: center;
+	border-radius: 8px;
+	transition: 200ms ease-in-out;
+	box-shadow: 0 0 15px rgba(0,0,0,0.7);
+}
+
+.back:hover {
+/*  bottom: 2px;
+  right: 2px;
+*/  box-shadow: 0px 0px 20px 1px #000;
+}
+

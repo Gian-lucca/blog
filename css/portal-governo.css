@@ -1,0 +1,215 @@
+hr.gradiente {
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0));
+  margin: 60px 0;
+}
+
+/* CORES DE FUNDO DAS SEÇÕES */
+.cinza{background-color:#dddddd}
+.branco{background-color:#ffffff}
+
+/* SEÇÕES */
+section#secao-pesquisa {
+  background-image: linear-gradient(rgba(0, 80, 138, 0.25) 50%, rgba(0, 80, 138, 0.25) 50%), url(../imagens/rio-de-janeiro-cristo-redentor.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  min-height: 500px;
+  }
+/* .section-container {padding: 50px 0px;} */
+
+.section-container#navega{display: flex; justify-content: space-around; flex-direction: column; align-items: center; padding: 0px;}
+.section-container#pesquisa{display: flex; align-items: center; justify-content: center; flex-direction: column;}
+.section-container#telefones-uteis{text-align: center;}
+.titulo-secao {display: block; text-align: center; margin-bottom: 25px;}
+.titulo-secao span{font-weight: bold; font-size: 2em; color: #00508a;}
+p:empty {width: 80px; height: 6px; background: #00508a; margin: 0 auto;}
+
+.homemenu{display:none; padding: 15px; width:100%;}
+
+
+
+/* TELEFONES �TEIS */
+.telefones-uteis-wrap {display: flex; flex-wrap: wrap; justify-content: space-around; width: 70%; margin: 0 auto;}
+.telefones-uteis-wrap a {margin: 7px 3px; border-radius: 25px; background-color: #dddddd; color: #363636; font-weight: 700; font-size: 0.9em; padding: 5px 12px; cursor: pointer;}
+.telefones-uteis-wrap button {
+  margin: 7px 3px;
+  border-radius: 5px;
+  background-color: #dddddd;
+  color: #363636;
+  font-weight: 700;
+  font-size: 0.9em;
+  padding: 12px 12px;
+  cursor: pointer;
+  border: none;
+}
+.section-container #telefones-uteis{display: flex; align-items: center; justify-content: center; flex-direction: column;}
+.telefones-uteis-linha{display: flex; flex-direction: row; justify-content: space-between;}
+
+
+
+
+
+
+
+/* SEÇÃO NOTICIAS 3 COLUNAS  */
+
+
+.noticia-3col-wrap {
+  display: flex;
+  justify-content: space-between;
+  margin: 0px auto;
+  width: 76%;
+  padding: 25px 0px 0px 0px;
+}
+
+.noticia-3col {
+  width: 30%;
+  margin-right: 10px;
+}
+
+.noticia-3col a {
+  text-decoration: none;
+  color: #363636;
+}
+
+.noticia-3col h1 {
+  color: #363636;
+  line-height: 1.2;
+  font-weight: 700;
+}
+
+.noticia-3col h4 {
+  color: #00508a;
+  font-size: 0.8em;
+  line-height: 2.3;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.noticia-3col p {
+  margin-top: 10px;
+  line-height: 1.4;
+}
+
+/* SEÇÃO NOTICIAS 3 COLUNAS  */
+
+.noticia-2col-wrap {
+  display: flex;
+  justify-content: space-between;
+  margin: 0px auto;
+  width: 76%;
+  padding: 25px 0px 25px 0px;
+}
+
+.noticia-2col {
+  width: 47%;
+  margin-right: 10px;
+}
+
+.noticia-2col-imagem-wrap {
+  height: 350px;
+  overflow: hidden;
+  position: relative;
+}
+
+.noticia-2col-imagem-wrap img {
+  height: inherit;
+  width: 130%;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+}
+
+.noticia-2col h4 {
+  color: #00508a;
+  font-size: 0.8em;
+  line-height: 2.3;
+  margin-top: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.noticia-2col h1 {
+  color: #363636;
+  line-height: 1.2;
+  font-weight: 700;
+}
+
+.noticia-2col p {
+  margin-top: 10px;
+  line-height: 1.4;
+}
+
+.noticia-2col a {
+  text-decoration: none;
+  color: #363636;
+}
+
+
+
+
+/* VOLTA AO TOPO  */
+
+#back2Top {width: 40px; line-height: 40px; overflow: hidden; z-index: 999; display: none; cursor: pointer; position: fixed; bottom: 50px; right: 0; background-color: #ccc; color: #555; text-align: center; font-size: 30px; text-decoration: none; border-radius: 15px 15px 0 0;
+    -moz-transform: rotate(270deg);
+    -webkit-transform: rotate(270deg);
+    -o-transform: rotate(270deg);
+    -ms-transform: rotate(270deg);
+    transform: rotate(270deg);
+}
+#back2Top:hover {background-color: #DDF; color: #000;}
+
+
+
+/* MEDIA QUERIES */
+@media (max-width: 1090px){.infosup{ margin-left: 0;}}
+@media (max-width: 995px){.search-box input#CrtTopo_txtBuscar{width: 40em;} }
+@media (max-width: 900px){.search-box input#CrtTopo_txtBuscar{width: 37em;} }
+@media (max-width: 800px){.section-container{width: 95%;}
+  #logo-topo {margin-left: 15%;}
+ }
+@media (max-width: 700px){.search-box input#CrtTopo_txtBuscar{width: 35em;} }
+@media (max-width: 620px){
+  .telefones-uteis-wrap{width: 50%; font-size: 1.2em; display: inline-grid;}
+  .telefones-uteis-linha{flex-direction: column;}
+  .programas-acoes article {width: 100%;}
+  #logo-topo {margin-left: 5%;}
+}
+@media (max-width: 500px) {
+.desc-slider2 a {font-size: .6em}
+.menu-column {margin-top: 20px; font-size: 1.3em;}
+.noticias-wrap {flex-direction: column;}
+.noticia {width: 95%; margin: 10px;}
+.cabecalho-wrap {display: contents;}
+#logo-topo {margin: 0;}
+.menu-overlay-content {margin: 0;}
+.menu-row {display:unset;}
+}
+@media (max-width: 565px){
+  .search-box input#CrtTopo_txtBuscar{width: 25em;}
+}
+@media screen and (max-height: 450px) {
+  .menu-overlay {overflow-y: auto;}
+  /* .menu-overlay a {font-size: 20px} */
+  .menu-overlay .closebtn {font-size: 5em; top: 15px; right: 35px;}
+}
+@media (max-width: 415px){
+  .search-box input#CrtTopo_txtBuscar{width: 20em;}
+  .section-container #telefones-uteis{flex-flow: wrap;}
+  .logo-branco {width: 120%;}
+}
+@media (max-width: 360px){
+  .search-box input#CrtTopo_txtBuscar{width: 15em;}
+}
+
+
+
+
+
+

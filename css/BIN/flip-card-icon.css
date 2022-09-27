@@ -1,0 +1,334 @@
+﻿/***
+*       INÍCIO FLIP-CARD.CSS ===============================================================================================
+***/
+
+.flip-card {
+    width: 165;/*218px*/
+    height: 165px;/*150*/
+    display: inline-block;
+    margin: 15px;
+}
+
+.flip-container {
+    -webkit-perspective: 1000px;
+    -moz-perspective: 1000px;
+    -ms-perspective: 1000px;
+    perspective: 1000px;
+    -ms-transform: perspective(1000px);
+    -moz-transform: perspective(1000px);
+    -moz-transform-style: preserve-3d;
+    -ms-transform-style: preserve-3d;
+}
+
+.flip-container,
+.flip-container__front,
+.flip-container__back,
+.flip-container__button {
+    width:  100%;
+    height: 100%;
+	border-radius: 8px;
+}
+
+.flip-container__flipper {
+    -webkit-transition: 0.6s;
+    -webkit-transform-style: preserve-3d;
+    -ms-transition: 0.6s;
+    -moz-transition: 0.6s;
+    -moz-transform: perspective(1000px);
+    -moz-transform-style: preserve-3d;
+    -ms-transform-style: preserve-3d;
+    transition: 0.6s;
+    transform-style: preserve-3d;
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.flip-container__front,
+.flip-container__back {
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transition: 0.6s;
+    -webkit-transform-style: preserve-3d;
+    -webkit-transform: rotateY(0deg);
+    -moz-transition: 0.6s;
+    -moz-transform-style: preserve-3d;
+    -moz-transform: rotateY(0deg);
+    -o-transition: 0.6s;
+    -o-transform-style: preserve-3d;
+    -o-transform: rotateY(0deg);
+    -ms-transition: 0.6s;
+    -ms-transform-style: preserve-3d;
+    -ms-transform: rotateY(0deg);
+    transition: 0.6s;
+    transform-style: preserve-3d;
+    transform: rotateY(0deg);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.flip-container__front {
+    -webkit-transform: rotateY(0deg);
+    -ms-transform: rotateY(0deg);
+    z-index: 2;
+}
+
+.flip-container__back {
+    -webkit-transform: rotateY(-180deg);
+    -moz-transform: rotateY(-180deg);
+    -o-transform: rotateY(-180deg);
+    -ms-transform: rotateY(-180deg);
+    transform: rotateY(-180deg);
+    padding: 2%;
+}
+
+
+.flip-container__button {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+ /*   background-image: linear-gradient(to bottom, rgba(38,68,120,0.7), rgba(38,68,120,0.7)), url("../img/card/default.jpg?v=1.8.4");
+    background-repeat: no-repeat;
+    background-color:#00508A;*/
+    border: 1px solid #dddddd;
+    cursor: pointer;
+}
+
+.flip-container__button span {
+   color: #eeeeee;
+   font-size: 1em;
+   padding: 5px;
+   width: inherit;
+   font-weight:600;
+}
+
+.flip-container__estatico {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    border: 1px solid #dddddd;
+/*    background-image: linear-gradient(to bottom, rgba(38,68,120,0.7), rgba(38,68,120,0.7)), url("../img/card/default.jpg?v=1.8.4");
+    background-repeat: no-repeat;
+*/  background-color:#00508A;
+    cursor: pointer;
+	border-radius: 8px;
+}
+
+.flip-container__estatico span {
+   color: #eeeeee;
+   font-size: 1em;
+   padding: 5px;
+   width: inherit;
+   font-weight:600;
+}
+
+.flip-container.active .flip-container__back {
+    -webkit-transform: rotateY(0deg);
+    -moz-transform: rotateY(0deg);
+    -o-transform: rotateY(0deg);
+    -ms-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+}
+.flip-container.active .flip-container__front {
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+}
+
+.block-flash-card {
+    border: 1px solid #dddddd;
+    background-color: #dddddd;
+    padding: 5%;
+    text-align: left;
+}
+
+.block-flash-card a {
+    display: table-cell;
+}
+
+.box-flip-cards {
+    position: relative;
+    margin-top: -5px;
+    text-align: center;
+}
+
+.block-flash-card span{
+    color: #333333;
+    font-size: 0.6em;
+    font-weight:600;
+}
+
+
+
+/*#institucional-icon-card {
+background: linear-gradient(rgba(0,80,138,0.8), rgba(0,80,138,0.8)), url(../imagens/card-institucional.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+#legislacao-icon-card {
+background: linear-gradient(rgba(0,80,138,0.8), rgba(0,80,138,0.8)), url(../imagens/card-legislacao-c.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+#pessoal-icon-card {
+background: linear-gradient(rgba(0,80,138,0.8), rgba(0,80,138,0.8)), url(../imagens/card-pessoal.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+#voos-governador-icon-card {
+background: linear-gradient(rgba(0,80,138,0.8), rgba(0,80,138,0.8)), url(../imagens/card-voos-c.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+#planejamento-orcamento-icon-card {
+background: linear-gradient(rgba(0,80,138,0.8), rgba(0,80,138,0.8)), url(../imagens/card-planejamento-orcamento-2.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+#receitas-icon-card {
+background: linear-gradient(rgba(0,80,138,0.8), rgba(0,80,138,0.8)), url(../imagens/card-coins-1726618_640.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+#despesas-icon-card {
+background: linear-gradient(rgba(0,80,138,0.8), rgba(0,80,138,0.8)), url(../imagens/card-despesas.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+#licitacoes-contratos-sancoes-icon-card {
+background: linear-gradient(rgba(0,80,138,0.8), rgba(0,80,138,0.8)), url(../imagens/card-licitacoes-contratos-sancoes.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+#convenios-transferencias-icon-card {
+background: linear-gradient(rgba(0,80,138,0.8), rgba(0,80,138,0.8)), url(../imagens/card-convenios.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+#obras-publicas-icon-card {
+background: linear-gradient(rgba(0,80,138,0.8), rgba(0,80,138,0.8)), url(../imagens/card-obras-2.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+#acesso-informacao-icon-card {
+background: linear-gradient(rgba(0,80,138,0.8), rgba(0,80,138,0.8)), url(../imagens/card-acesso-informacao.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+
+}
+
+#ouvidoria-icon-card {
+background: linear-gradient(rgba(0,80,138,0.8), rgba(0,80,138,0.8)), url(../imagens/card-ouvidoria-2.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+#dados-abertos-icon-card {
+background: linear-gradient(rgba(0,80,138,0.8), rgba(0,80,138,0.8)), url(../imagens/card-dados-abertos-2b.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+#responsabilidade-fiscal-icon-card {
+background: linear-gradient(rgba(0,80,138,0.8), rgba(0,80,138,0.8)), url(../imagens/card-responsabilidade-fiscal.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+#regime-recuperacao-fiscal-icon-card {
+background: linear-gradient(rgba(0,80,138,0.8), rgba(0,80,138,0.8)), url(../imagens/card-recuperacao-fiscal.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+#locacao-imoveis-icon-card {
+background: linear-gradient(rgba(0,80,138,0.8), rgba(0,80,138,0.8)), url(../imagens/card-architecture-2256489_640.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+#divida-ativa-icon-card {
+background: linear-gradient(rgba(0,80,138,0.8), rgba(0,80,138,0.8)), url(../imagens/card-divida-ativa.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+#divida-publica-icon-card {
+background: linear-gradient(rgba(0,80,138,0.8), rgba(0,80,138,0.8)), url(../imagens/card-divida-publica-c.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+#aditamentos-icon-card {
+background: linear-gradient(rgba(0,80,138,0.8), rgba(0,80,138,0.8)), url(../imagens/card-coins-1726618_640.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+#bolsa-pesquisa-icon-card {
+background: linear-gradient(rgba(0,80,138,0.8), rgba(0,80,138,0.8)), url(../imagens/card-bolsa-pesquisa-3.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+#beneficios-fiscais-icon-card {
+background: linear-gradient(rgba(0,80,138,0.8), rgba(0,80,138,0.8)), url(../imagens/card-coins-1726618_640.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+#outros-poderes-icon-card {
+background: linear-gradient(rgba(0,80,138,0.8), rgba(0,80,138,0.8)), url(../imagens/cad-outras-instituicoes.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+
+}
+*/
+
+
+
+
+
+*//***
+*       FIM FLIP-CARD.CSS ===============================================================================================
+***/

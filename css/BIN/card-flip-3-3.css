@@ -1,0 +1,262 @@
+wrap {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+
+/*div {
+  width: 100%;
+  height: 100%;
+}
+*/
+.card-container {
+  margin: 5px;
+  width: 165px;
+  height: 165px;
+  perspective: 1000px;
+}
+
+
+.card {
+  transition: transform 2s;
+  transform-style: preserve-3d;
+  cursor: pointer;
+	width: 165px;
+	height: 165px;
+	text-align: center;
+	border-radius: 8px;
+/*	transition: 200ms ease-in-out;
+*/	box-shadow: 0 0 5px rgba(0,0,0,0.5);
+}
+
+.front, .back {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  backface-visibility: hidden;
+  border-radius: 8px;
+  width: 165px;
+  height: 165px;
+}
+
+
+.front:hover {
+  bottom: 1px;
+  left: 1px;
+  box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.8);
+}
+
+.front h1 {
+  color: #ddd;
+  font-size: 0.85em;
+  padding:10px;
+  }
+
+.front p {
+  color: #ddd;
+  font-size: 0.7em;
+  margin:10px;
+  font-weight:700;
+    }
+
+.back {
+/*  border: 2px solid black;
+*/  background-color: #eee;
+  transform: rotateY(180deg);
+}
+
+.back:hover {
+  bottom: 1px;
+  right: 1px;
+  box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.8);
+}
+
+.back h1 {
+  color: #000;
+  font-size: 0.85em;
+  padding:7px;
+  }
+
+.back ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0px 3px;
+}
+
+.back li {
+  color: #000;
+  font-size: 0.65em;
+  text-align:left;
+  }
+
+.back a:link {
+/*  text-decoration: none;
+*/  color: #000;
+  font-size: 0.75em;
+  padding: 0px 6px;
+  }
+
+#um {
+background: linear-gradient(rgba(0,80,138,0.8), rgba(0,80,138,0.8)), url(../imagens/card-institucional.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+#dois {
+background: linear-gradient(rgba(0,80,138,0.8), rgba(0,80,138,0.8)), url(../imagens/card-legislacao-c.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+#tres {
+background: linear-gradient(rgba(0,80,138,0.8), rgba(0,80,138,0.8)), url(../imagens/card-pessoal.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+#quatro {
+background: linear-gradient(rgba(0,80,138,0.8), rgba(0,80,138,0.8)), url(../imagens/card-voos-c.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+#cinco {
+background: linear-gradient(rgba(0,80,138,0.8), rgba(0,80,138,0.8)), url(../imagens/card-planejamento-orcamento-2.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+#seis {
+background: linear-gradient(rgba(0,80,138,0.8), rgba(0,80,138,0.8)), url(../imagens/card-coins-1726618_640.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+#sete {
+background: linear-gradient(rgba(0,80,138,0.8), rgba(0,80,138,0.8)), url(../imagens/card-despesas.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+#oito {
+background: linear-gradient(rgba(0,80,138,0.8), rgba(0,80,138,0.8)), url(../imagens/card-licitacoes-contratos-sancoes.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+#nove {
+background: linear-gradient(rgba(0,80,138,0.8), rgba(0,80,138,0.8)), url(../imagens/card-convenios.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+#dez {
+background: linear-gradient(rgba(0,80,138,0.8), rgba(0,80,138,0.8)), url(../imagens/card-obras-2.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+#onze {
+background: linear-gradient(rgba(0,80,138,0.8), rgba(0,80,138,0.8)), url(../imagens/card-acesso-informacao.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+
+}
+
+#doze {
+background: linear-gradient(rgba(0,80,138,0.8), rgba(0,80,138,0.8)), url(../imagens/card-ouvidoria-2.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+#treze {
+background: linear-gradient(rgba(0,80,138,0.8), rgba(0,80,138,0.8)), url(../imagens/card-dados-abertos-2b.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+#quatorze {
+background: linear-gradient(rgba(0,80,138,0.8), rgba(0,80,138,0.8)), url(../imagens/card-responsabilidade-fiscal.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+#quinze {
+background: linear-gradient(rgba(0,80,138,0.8), rgba(0,80,138,0.8)), url(../imagens/card-recuperacao-fiscal.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+#dezesseis {
+background: linear-gradient(rgba(0,80,138,0.8), rgba(0,80,138,0.8)), url(../imagens/card-architecture-2256489_640.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+#dezessete {
+background: linear-gradient(rgba(0,80,138,0.8), rgba(0,80,138,0.8)), url(../imagens/card-divida-ativa.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+#dezoito {
+background: linear-gradient(rgba(0,80,138,0.8), rgba(0,80,138,0.8)), url(../imagens/card-divida-publica-c.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+#dezenove {
+background: linear-gradient(rgba(0,80,138,0.8), rgba(0,80,138,0.8)), url(../imagens/card-coins-1726618_640.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+#vinte {
+background: linear-gradient(rgba(0,80,138,0.8), rgba(0,80,138,0.8)), url(../imagens/card-bolsa-pesquisa-2.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+#vinte-e-um {
+background: linear-gradient(rgba(0,80,138,0.8), rgba(0,80,138,0.8)), url(../imagens/card-coins-1726618_640.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+#vinte-e-dois {
+background: linear-gradient(rgba(0,80,138,0.8), rgba(0,80,138,0.8)), url(../imagens/cad-outras-instituicoes.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+
+}
+
