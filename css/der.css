@@ -24,8 +24,8 @@ section#secao-pesquisa {
 .section-container#pesquisa{display: flex; align-items: center; justify-content: center; flex-direction: column;}
 .section-container#telefones-uteis{text-align: center; z-index: 10;}
 .titulo-secao {display: block; text-align: center; margin-bottom: 25px;}
-.titulo-secao span{font-weight: bold; font-size: 2em; color: #00508a;}
-p:empty {width: 80px; height: 6px; background: #00508a; margin: 0 auto;}
+.titulo-secao span{font-weight: bold; font-size: 2em; color: #1c2129;}
+p:empty {width: 80px; height: 6px; background: #1c2129; margin: 0 auto;}
 
 .homemenu{display:none; padding: 15px; width:100%;}
 

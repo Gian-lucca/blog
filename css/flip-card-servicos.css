@@ -183,7 +183,7 @@ h3.cardTitle {
 
 .card .front {
   cursor: alias;
-  background: #00508a;
+  background: #1c2129 ;
 }
 
 .icon-wrap {
@@ -192,7 +192,7 @@ h3.cardTitle {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #07375a;
+    background-color: #57545a ;
     border-radius: 50%;
     margin: 0 auto;
 }

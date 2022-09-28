@@ -40,7 +40,7 @@ body{font-family: 'Open Sans', sans-serif; background: #ffffff;}
 
 /* BTN LISTAGEM DE NOTÃCIAS */
 .lista-noticias{padding:.5em 2em; border:0; border-radius:25px; font-weight: bold; text-transform: uppercase;
-  font-size:.7em; letter-spacing:0.5; margin:0 auto; margin-top:100px; display: block; background-color: #00508a}
+  font-size:.7em; letter-spacing:0.5; margin:0 auto; margin-top:100px; display: block; background-color: #1c2129}
 .lista-noticias a{color:#ffffff; text-decoration:none;}
 
 /* SERVIÃ‡OS + PROCURADOS */
